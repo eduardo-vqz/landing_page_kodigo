@@ -2,6 +2,8 @@
     --radio: 20px;
     --color-font-light: #f1f1f1;
     --color-dark: #273136;
+    --color-primary: #a83338;
+    --color-secondary:#4a1818;
 }
 
 * {
@@ -10,7 +12,7 @@
 
 header {
     padding: 5px;
-    background-color: #a83338;
+    background-color: var(--color-primary);
     color: var(--color-font-light);
     font-size: 20px;
     width: 100%;
@@ -25,7 +27,7 @@ header {
     }
 
     .search-box {
-        background-color: #4a1818;
+        background-color: var(--color-secondary);
         border-radius: var(--radio);
         align-items: center;
         padding: 5px 10px;
