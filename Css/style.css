@@ -127,28 +127,54 @@ footer {
     width: 100%;
     background-color: var(--color-font-light);
     font-size: small;
+    color: var(--color-dark);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 
     .footer-content {
         width: 80%;
         margin: auto;
         display: flex;
+        
     }
 
     .footer-card {
-        position: relative; /* Necesario para posicionar el ::before */
-        padding-left: 10px; /* Espacio entre el borde y el contenido */
-    }
+        position: relative;
+        /* Necesario para posicionar el ::before */
+        padding-left: 10px;
+        /* Espacio entre el borde y el contenido */
+        width: 25%;
 
+        p {
+            font-weight: bolder;
+        }
+
+        img{
+            width: 100%;
+        }
+        
+
+        ul {
+            list-style-type: none;
+        }
+        ul li{
+            margin-top: 10px;
+        }
+    }
     .footer-card::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 50%; /* Partimos desde la mitad */
-        transform: translateY(-50%); /* Centramos verticalmente */
-        height: 50px; /* Altura de la línea */
-        width: 1px; /* Grosor de la línea */
-        background-color:var(--color-dark); /* Color de la línea */
-    }
-
-
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            /* Partimos desde la mitad */
+            transform: translateY(-50%);
+            /* Centramos verticalmente */
+            height: 50px;
+            /* Altura de la línea */
+            width: 1px;
+            /* Grosor de la línea */
+            background-color: var(--color-dark);
+            /* Color de la línea */
+        }
 }
