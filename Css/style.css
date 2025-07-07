@@ -3,7 +3,7 @@
     --color-font-light: #f1f1f1;
     --color-dark: #273136;
     --color-primary: #a83338;
-    --color-secondary:#4a1818;
+    --color-secondary: #4a1818;
 }
 
 * {
@@ -127,4 +127,28 @@ footer {
     width: 100%;
     background-color: var(--color-font-light);
     font-size: small;
+
+    .footer-content {
+        width: 80%;
+        margin: auto;
+        display: flex;
+    }
+
+    .footer-card {
+        position: relative; /* Necesario para posicionar el ::before */
+        padding-left: 10px; /* Espacio entre el borde y el contenido */
+    }
+
+    .footer-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%; /* Partimos desde la mitad */
+        transform: translateY(-50%); /* Centramos verticalmente */
+        height: 50px; /* Altura de la línea */
+        width: 1px; /* Grosor de la línea */
+        background-color:var(--color-dark); /* Color de la línea */
+    }
+
+
 }
