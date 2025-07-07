@@ -1,3 +1,8 @@
+:root {
+    --radio: 20px;
+    --color-font-light: #f1f1f1;
+}
+
 * {
     margin: 0px;
 }
@@ -5,49 +10,81 @@
 header {
     padding: 5px;
     background-color: #a83338;
-    color: whitesmoke;
+    color: var(--color-font-light);
     font-size: 20px;
     width: 100%;
     display: flex;
-}
-
-header .search-box {
-    background-color: #4a1818;
-    /* Fondo oscuro del input */
-    border-radius: 20px;
-    display: flex;
+    justify-content: space-between;
+    position: relative;
+    box-sizing: border-box;
     align-items: center;
-    padding: 5px 10px;
-    width: 20%;
 
-    .search-icon {
-
-        margin-right: 10px;
-        font-size: 16px;
+    img {
+        height: 15px;
     }
 
-    input {
-        background: transparent;
-        border: none;
-        outline: none;
-        color: #ccc;
-        font-size: 14px;
+    .search-box {
+        background-color: #4a1818;
+        border-radius: var(--radio);
+        align-items: center;
+        padding: 5px 10px;
+        width: 25%;
 
+        .search-icon {
+            margin-right: 10px;
+            font-size: 14px;
+            color: var(--color-font-light);
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--color-font-light);
+            font-size: 12px;
+        }
     }
+
+    .icon-perfil-card a img{
+        margin: 5px;
+    }
+
 }
-
 
 nav {
-    background-color: #f1f1f1;
+    background-color: var(--color-font-light);
 }
 
+aside {
+    background-color: #273136;
+    border-top-left-radius: var(--radio);
+    border-bottom-left-radius: var(--radio);
+    border-bottom-right-radius: var(--radio);
 
-aside{
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 10px;
+    img {
+        padding: 0px;
+        margin: 0px;
+        width: 100%;
+        border-top-left-radius: var(--radio);
+        border-bottom-right-radius: var(--radio);
+    }
+
+    a,
+    .a-secundario {
+        margin: 20px;
+        font-weight: bolder;
+        text-decoration: none;
+        color: var(--color-font-light);
+    }
+
+    a {
+        font-size: 20px;
+    }
+
+    .a-secundario {
+        font-size: 15px;
+    }
 }
-
 
 main {
     width: 80%;
@@ -56,6 +93,6 @@ main {
 
 footer {
     width: 100%;
-    background-color: #f1f1f1;
+    background-color: var(--color-font-light);
     font-size: small;
 }
