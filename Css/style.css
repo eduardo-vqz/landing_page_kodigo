@@ -1,6 +1,7 @@
 :root {
     --radio: 20px;
     --color-font-light: #f1f1f1;
+    --color-dark: #273136;
 }
 
 * {
@@ -45,7 +46,7 @@ header {
         }
     }
 
-    .icon-perfil-card a img{
+    .icon-perfil-card a img {
         margin: 5px;
     }
 
@@ -53,10 +54,39 @@ header {
 
 nav {
     background-color: var(--color-font-light);
+    align-items: center;
+
+    ul {
+        padding: 10px;
+        margin-left: 25px;
+    }
+
+    ul li {
+        display: inline-block;
+        margin-left: 10px;
+
+    }
+
+    ul li:hover {
+        text-decoration: underline;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: var(--color-dark);
+        font-weight: bolder;
+        font-size: 17px;
+    }
+
+    ul li a img {
+        width: 12px;
+        margin-right: 5px;
+    }
+
 }
 
 aside {
-    background-color: #273136;
+    background-color: var(--color-dark);
     border-top-left-radius: var(--radio);
     border-bottom-left-radius: var(--radio);
     border-bottom-right-radius: var(--radio);
