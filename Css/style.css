@@ -123,6 +123,13 @@ main {
     margin: auto;
 }
 
+.contenedor-productos {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
 footer {
     width: 100%;
     background-color: var(--color-font-light);
@@ -136,45 +143,46 @@ footer {
         width: 80%;
         margin: auto;
         display: flex;
-        
+
     }
 
     .footer-card {
         position: relative;
-        /* Necesario para posicionar el ::before */
-        padding-left: 10px;
-        /* Espacio entre el borde y el contenido */
+        padding-left: 15px;
+        padding-right: 10px;
         width: 25%;
 
         p {
             font-weight: bolder;
         }
 
-        img{
+        img {
             width: 100%;
         }
-        
+
 
         ul {
             list-style-type: none;
         }
-        ul li{
+
+        ul li {
             margin-top: 10px;
         }
     }
+
     .footer-card::before {
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 50%;
-            /* Partimos desde la mitad */
-            transform: translateY(-50%);
-            /* Centramos verticalmente */
-            height: 50px;
-            /* Altura de la línea */
-            width: 1px;
-            /* Grosor de la línea */
-            background-color: var(--color-dark);
-            /* Color de la línea */
-        }
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 50%;
+        /* Partimos desde la mitad */
+        transform: translateY(-50%);
+        /* Centramos verticalmente */
+        height: 50px;
+        /* Altura de la línea */
+        width: 1px;
+        /* Grosor de la línea */
+        background-color: var(--color-dark);
+        /* Color de la línea */
+    }
 }
