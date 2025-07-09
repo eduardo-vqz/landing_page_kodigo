@@ -128,6 +128,96 @@ main {
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
+
+    .tarjeta-producto {
+        width: 220px;
+        background-color: white;
+        border-radius: 10px;
+        padding: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 60%;
+        height: auto;
+        border-radius: 6px;
+        margin-bottom: 10px;
+        margin-bottom: 20px;
+    }
+
+    .marca {
+        font-size: 13px;
+        font-weight: bold;
+        color: #444;
+        margin-bottom: 4px;
+    }
+
+    .nombre {
+        font-size: 14px;
+        font-weight: 500;
+        color: #111;
+        margin-bottom: 6px;
+    }
+
+    .vendido {
+        font-size: 12px;
+        color: #777;
+        margin-bottom: 10px;
+    }
+
+    .vendido span {
+        color: #555;
+        font-weight: bold;
+    }
+
+    .precios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        margin-bottom: 12px;
+    }
+
+    .anterior {
+        text-decoration: line-through;
+        color: #888;
+        font-size: 13px;
+    }
+
+    .actual {
+        color: #c60000;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .descuento {
+        background-color: #c60000;
+        color: white;
+        font-size: 12px;
+        padding: 2px 5px;
+        border-radius: 4px;
+    }
+
+    button {
+        background-color: var(--color-primary);
+        color: white;
+        border: none;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #a00000;
+    }
 }
 
 footer {
