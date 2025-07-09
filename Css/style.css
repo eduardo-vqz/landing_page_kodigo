@@ -137,6 +137,38 @@ h2 {
     margin-bottom: 20px;
 }
 
+.producto{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .imagen-producto{
+        width: 60%;
+
+        h1{
+            color: var(--color-dark);
+            
+        }
+        img{
+            width: 80%;
+        }
+
+        img:hover{
+            width: 100%;
+        }
+    }
+
+    .descripcion-producto{
+        width: 40%;
+        background-color: var(--color-font-light);
+    }
+
+    .imagen-producto, .descripcion-producto{
+        padding: 15px;
+        
+    }
+}
 .contenedor-productos {
     margin-top: 15px;
     margin-bottom: 15px;
