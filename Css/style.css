@@ -4,10 +4,15 @@
     --color-dark: #273136;
     --color-primary: #a83338;
     --color-secondary: #4a1818;
+    --color-scalet-red: #c60000;
 }
 
 * {
     margin: 0px;
+
+    a{
+        text-decoration: none;
+    }
 }
 
 header {
@@ -74,7 +79,6 @@ nav {
     }
 
     ul li a {
-        text-decoration: none;
         color: var(--color-dark);
         font-weight: bolder;
         font-size: 17px;
@@ -121,6 +125,16 @@ aside {
 main {
     width: 80%;
     margin: auto;
+
+
+}
+
+h2 {
+    color: var(--color-dark);
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .contenedor-productos {
@@ -129,9 +143,9 @@ main {
     display: flex;
     justify-content: space-between;
 
-    .tarjeta-producto {
-        width: 220px;
-        background-color: white;
+    .tarjeta-productos {
+        width: 25%;
+        background-color: rgb(255, 255, 255);
         border-radius: 10px;
         padding: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -139,12 +153,15 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     img {
         width: 60%;
         height: auto;
         border-radius: 6px;
+        align-items: center;
         margin-bottom: 10px;
         margin-bottom: 20px;
     }
@@ -161,6 +178,10 @@ main {
         font-weight: 500;
         color: #111;
         margin-bottom: 6px;
+    }
+
+    .titulo a{
+        color: var(--color-dark);
     }
 
     .vendido {
@@ -189,13 +210,13 @@ main {
     }
 
     .actual {
-        color: #c60000;
+        color: var(--color-scalet-red);
         font-weight: bold;
         font-size: 16px;
     }
 
     .descuento {
-        background-color: #c60000;
+        background-color: var(--color-scalet-red);
         color: white;
         font-size: 12px;
         padding: 2px 5px;
@@ -211,7 +232,7 @@ main {
         border-radius: 8px;
         cursor: pointer;
         font-weight: bold;
-        width: 100%;
+        width: 80%;
         transition: background-color 0.3s ease;
     }
 
