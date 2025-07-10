@@ -3,7 +3,6 @@
     src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
-
 }
 
 @font-face {
@@ -25,15 +24,15 @@
 * {
     font-family: 'Fira Sans Regular';
     margin: 0px;
-
-    a {
-        text-decoration: none;
-    }
 }
 
+a {
+    text-decoration: none;
+}
+
+h1,
 h2,
 h4,
-h1,
 .footer-card p {
     font-family: "Space Grotesk";
 }
@@ -83,7 +82,6 @@ header {
     .icon-perfil-card a img {
         margin: 5px;
     }
-
 }
 
 nav {
@@ -98,7 +96,6 @@ nav {
     ul li {
         display: inline-block;
         margin-left: 10px;
-
     }
 
     ul li:hover {
@@ -233,14 +230,12 @@ h2 {
         button:hover {
             background-color: #a00000;
         }
-
     }
 
     .imagen-producto,
     .descripcion-producto {
         padding: 15px;
         border-radius: var(--radio);
-
     }
 }
 
@@ -303,7 +298,6 @@ h2 {
     }
 
     .precio {
-
         align-items: center;
         justify-content: center;
         gap: 8px;
@@ -352,7 +346,6 @@ h2 {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
-
     justify-content: space-between;
 
     .datos,
@@ -390,7 +383,6 @@ h2 {
 
     .datos {
         width: 50%;
-
 
         .detalles-datos {
             margin-top: 20px;
@@ -456,12 +448,10 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
 
-
     .footer-content {
         width: 80%;
         margin: auto;
         display: flex;
-
     }
 
     .footer-card {
@@ -477,9 +467,6 @@ footer {
         img {
             width: 100%;
         }
-
-
-
 
         ul li {
             margin-top: 10px;
