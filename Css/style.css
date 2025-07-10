@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Fira Sans Regular';
     src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
-    font-weight: 100; 
+    font-weight: 100;
     font-style: normal;
 
 }
@@ -9,7 +9,7 @@
 @font-face {
     font-family: 'Space Grotesk';
     src: url('../fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
-    font-weight: 100 700; 
+    font-weight: 100 700;
     font-style: normal;
 }
 
@@ -25,13 +25,16 @@
 * {
     font-family: 'Fira Sans Regular';
     margin: 0px;
-    
-    a{
+
+    a {
         text-decoration: none;
     }
 }
 
-h2, h4, h1, .footer-card p{
+h2,
+h4,
+h1,
+.footer-card p {
     font-family: "Space Grotesk";
 }
 
@@ -155,41 +158,90 @@ h2 {
     margin-bottom: 20px;
 }
 
-.producto{
+.producto {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
     justify-content: space-between;
 
-    .imagen-producto{
+    .imagen-producto {
         width: 60%;
         margin-right: 15px;
 
-        h1{
+        h1 {
             color: var(--color-dark);
-            
         }
-        img{
+
+        img {
             width: 80%;
         }
 
-        img:hover{
+        img:hover {
             width: 100%;
             transition: width 0.5s ease;
         }
+
+
     }
 
-    .descripcion-producto{
+    .descripcion-producto {
         width: 40%;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        align-items: center;
+
+        .precio {
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 12px;
+
+            .anterior {
+                text-decoration: line-through;
+                color: #888;
+                font-size: 13px;
+            }
+
+            .actual {
+                color: var(--color-scalet-red);
+                font-weight: bold;
+            }
+
+            .descuento {
+                background-color: var(--color-scalet-red);
+                color: white;
+                font-size: 12px;
+                padding: 2px 5px;
+                border-radius: 4px;
+            }
+        }
+
+        button {
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+
     }
 
-    .imagen-producto, .descripcion-producto{
+    .imagen-producto,
+    .descripcion-producto {
         padding: 15px;
         border-radius: var(--radio);
-        
+
     }
 }
+
 .contenedor-productos {
     margin-top: 15px;
     margin-bottom: 15px;
@@ -233,7 +285,7 @@ h2 {
         margin-bottom: 6px;
     }
 
-    .titulo a{
+    .titulo a {
         color: var(--color-dark);
     }
 
@@ -248,8 +300,8 @@ h2 {
         font-weight: bold;
     }
 
-    .precios {
-        display: flex;
+    .precio {
+
         align-items: center;
         justify-content: center;
         gap: 8px;
