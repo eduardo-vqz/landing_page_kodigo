@@ -38,6 +38,10 @@ h1,
     font-family: "Space Grotesk";
 }
 
+ul {
+    list-style-type: none;
+}
+
 header {
     padding: 5px;
     background-color: var(--color-primary);
@@ -180,8 +184,6 @@ h2 {
             width: 100%;
             transition: width 0.5s ease;
         }
-
-
     }
 
     .descripcion-producto {
@@ -346,6 +348,83 @@ h2 {
     }
 }
 
+.section-perfil {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+
+    .datos,
+    .boletin,
+    .opciones {
+        margin-left: 10px;
+        padding: 10px;
+    }
+
+    .opciones {
+        width: 20%;
+
+        img {
+            width: 30%;
+            align-items: center;
+            margin: auto;
+        }
+
+        ul li{
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 15px;
+            width: 80%;
+            border-bottom: 1px solid var(--color-primary);
+        }
+    }
+
+
+
+    .datos {
+        width: 50%;
+
+
+        .detalles-datos {
+            margin-top: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: var(--radio);
+        }
+
+        dt {
+            font-weight: bolder;
+            margin-bottom: 5px;
+        }
+
+        dd {
+            margin-bottom: 10px;
+        }
+
+        button {
+            background-color: var(--color-primary);
+            color: white;
+            border: none;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 25%;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #a00000;
+        }
+    }
+
+    .boletin {
+        width: 30%;
+        background-color: #b2e3ec;
+    }
+}
+
 footer {
     width: 100%;
     background-color: var(--color-font-light);
@@ -377,9 +456,7 @@ footer {
         }
 
 
-        ul {
-            list-style-type: none;
-        }
+
 
         ul li {
             margin-top: 10px;
