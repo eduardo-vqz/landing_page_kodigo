@@ -352,6 +352,7 @@ h2 {
     margin-top: 15px;
     margin-bottom: 15px;
     display: flex;
+
     justify-content: space-between;
 
     .datos,
@@ -370,12 +371,18 @@ h2 {
             margin: auto;
         }
 
-        ul li{
-            display: block;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            width: 80%;
-            border-bottom: 1px solid var(--color-primary);
+        .perfil-option {
+            ul {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            ul li {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 80%;
+                border-bottom: 1px solid var(--color-primary);
+            }
         }
     }
 
@@ -421,7 +428,23 @@ h2 {
 
     .boletin {
         width: 30%;
-        background-color: #b2e3ec;
+        font-size: small;
+        align-items: center;
+
+        .informativo {
+            border: 1px solid #111;
+            padding: 10px;
+
+            .boletin-informativo {
+                color: var(--color-scalet-red);
+                margin-bottom: 10px;
+            }
+
+            p {
+                margin-bottom: 10px;
+            }
+        }
+
     }
 }
 
